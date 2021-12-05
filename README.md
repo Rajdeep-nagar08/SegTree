@@ -6,14 +6,14 @@ include SegmentTree.h
 
 To construct a segment tree you need to specify the following:
 
-a. The datatype of array for which the tree is being constructed.
+a.   The datatype of array for which the tree is being constructed.
 
-b. an array or vector for which the tree is to be constructed.
+b.   an array or vector for which the tree is to be constructed.
 
-c. a value that can be used to fill the extra nodes of the tree.
+c.   a value that can be used to fill the extra nodes of the tree.
 
-d. a function combine that specifies how the result of left and right child of a node
-should be used to generate the value of current node.
+d.   a function combine that specifies how the result of left and right child of a node
+     should be used to generate the value of current node.
 
 Example usage:
 
@@ -27,4 +27,5 @@ long long product(long long x,long long y){return x*y;}
 SegmentTree < long long > rangeProductQueries(dataVector,1,product);
 
 solution to SPOJ GSS1 using segTree library : https://ideone.com/EFxf6O
+
 solution to SPOJ KGSS using segTree library : https://ideone.com/fUK5Jz
